@@ -21,30 +21,45 @@
 </head>
 
 <body>
-    <header class="line">
-        <div class="container addres-nav">
-            <nav class="main-nav">
-                <a class="main-logo" href="/">
-                    <span class="web-blue">Web</span><span class="logo-black">Studio</span>
+    <header class="page-header">
+        <div class="container page-header__container">
+            <nav class="page-header__nav">
+                <a class="link" href="/">
+                    <span class="logo link__logo--blue">Web</span>Studio
                 </a>
-                <ul class="head-list">
-                    <li class="item"><a class="link" href="index.html">Студія</a></li>
-                    <li class="item"><a class="link current" href="portfolio.html">Портфоліо</a></li>
-                    <li class="item"><a class="link" href="">Контакти</a></li>
+                <ul class="list">
+                    <li class="list__item">
+                        <a class="list__link list__link--current" href="index.html">Студія</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="portfolio.html">Портфоліо
+    
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="">Контакти
+    
+                        </a>
+                    </li>
                 </ul>
             </nav>
-            <ul class="head-info">
-                <li class="head-item">
-                    <a class="info mail" href="mailto:info@devstudio.com">
-                        <svg class="icon-mail" width="16" height="12">
+            <!-- head-info -->
+            <ul class="feedback ">
+                <!-- head-item -->
+                <li class="feedback__item">
+                    <!-- info mail -->
+                    <a class="feedback__link feedback__link--animation" href="mailto:info@devstudio.com">
+                        <!-- icon-mail -->
+                        <svg class="feedback--icon" width="16" height="12">
                             <use href="./img/symbol-defs.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
+    
                     </a>
                 </li>
-                <li class="head-item">
-                    <a class="info tel" href="tel:+380961111111">
-                        <svg class="icon-tel" width="10" height="16">
+                <li class="feedback__item">
+                    <a class="feedback__link feedback__link--animation" href="tel:+380961111111">
+                        <svg class="feedback--icon" width="10" height="16">
                             <use href="./img/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -56,169 +71,188 @@
 
     <main>
 
-        <section class="midle">
+        <section class="portfolio">
             <div class="container">
-                <ul class="button-port">
-                    <li class="btn"><button class="first" type="button"> Все </button></li>
-                    <li class="btn"><button class="sec" type="button"> Веб-сайти</button></li>
-                    <li class="btn"><button class="thirh" type="button"> Додатки </button></li>
-                    <li class="btn"><button class="fourth" type="button"> Дизайн </button></li>
-                    <li class="btn"><button class="fifth " type="button"> Mаркетинг</button></li>
+                <ul class="button-list">
+                    <li class="button-list__item">
+                        <button class="button-list__button" type="button"> Все </button>
+                    </li>
+                    <li class="button-list__item">
+                        <button class="button-list__button" type="button"> Веб-сайти</button>
+                    </li>
+                    <li class="button-list__item">
+                        <button class="button-list__button" type="button"> Додатки </button>
+                    </li>
+                    <li class="button-list__item">
+                        <button class="button-list__button" type="button"> Дизайн </button>
+                    </li>
+                    <li class="button-list__item">
+                        <button class="button-list__button" type="button"> Mаркетинг</button>
+                    </li>
                 </ul>
-
-                <ul class="pick">
-                    <li class="between-photo">
-                        <a href="" class="mama">
+                <!-- pick -->
+                <ul class="galery">
+                    <!-- between-photo -->
+                    <li class="galery__photo">
+                        <!-- galery__link galery__link--hover -->
+                        <a href="" class="galery__link galery__link--hover">
+                            <!-- animation -->
                             <div class="animation">
-                                <img src="./img/port-img-1-min.jpg" width="368" alt="Постер" class="img-shadow">
-                                <div class="overlay-photo">
+                                <!-- animation__img -->
+                                <img src="./img/port-img-1-min.jpg" class="animation__img" width="368" alt="Постер">
+                                <!-- overlay-photo -->
+                                <div class="animation__overlay">
+                                    <!-- overlay-photo-text -->
+                                    <p class="animation__text">Ресурс пропонує комплексні пропозиції з різним
+                                        рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                            </div>
+                            <!-- content -->
+                            <div class="content">
+                                <!-- content__title -->
+                                <h2 class="content__title">Технокряк</h2>
+                                <!-- content__text -->
+                                <p class="content__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="galery__photo">
+                        <a href="" class="galery__link galery__link--hover">
+                            <div class="animation">
+                                <img src="./img/port-img-2-min.jpg" width="368" alt="Постер" class="animation__img">
+                                <div class="animation__overlay">
                                     <p class="overlay-photo-text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="menu-cont">
-                                <h2 class="photo-name">Технокряк</h2>
-                                <p class="text-name">Веб-сайт</p>
+                            <div class="content">
+                                <h2 class="content__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="content__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="between-photo">
-                        <a href="" class="mama">
+                    <li class="galery__photo">
+                        <a href="" class="galery__link galery__link--hover">
                             <div class="animation">
-                                <img src="./img/port-img-2-min.jpg" width="368" alt="Постер" class="img-shadow">
-                                <div class="overlay-photo">
-                                    <p class="overlay-photo-text">Ресурс пропонує комплексні пропозиції з різним
+                                <img src="./img/port-img-3-min.jpg" width="368" alt="Ресторан сифуд" class="animation__img">
+                                <div class="animation__overlay">
+                                    <p class="animation__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="menu-cont">
-                                <h2 class="photo-name">Постер New Orlean vs Golden Star</h2>
-                                <p class="text-name">Дизайн</p>
+                            <div class="content">
+                                <h2 class="content__title">Ресторан Seafood</h2>
+                                <p class="content__text">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="between-photo">
-                        <a href="" class="mama">
+                    <li class="galery__photo">
+                        <a href="" class="galery__link galery__link--hover">
                             <div class="animation">
-                                <img src="./img/port-img-3-min.jpg" width="368" alt="Ресторан сифуд" class="img-shadow">
-                                <div class="overlay-photo">
-                                    <p class="overlay-photo-text">Ресурс пропонує комплексні пропозиції з різним
+                                <img src="./img/port-img-4-min.jpg" width="368" alt="Проєкт прайм" class="animation__img">
+                                <div class="animation__overlay">
+                                    <p class="animation__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="menu-cont">
-                                <h2 class="photo-name">Ресторан Seafood</h2>
-                                <p class="text-name">Додаток</p>
+                            <div class="content">
+                                <h2 class="content__title">Проєкт Prime</h2>
+                                <p class="content__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="between-photo">
-                        <a href="" class="mama">
+                    <li class="galery__photo">
+                        <a href="" class="galery__link galery__link--hover">
                             <div class="animation">
-                                <img src="./img/port-img-4-min.jpg" width="368" alt="Проєкт прайм" class="img-shadow">
-                                <div class="overlay-photo">
-                                    <p class="overlay-photo-text">Ресурс пропонує комплексні пропозиції з різним
+                                <img src="./img/port-img-5-min.jpg" width="368" alt="Проєкт бокс" class="animation__img">
+                                <div class="animation__overlay">
+                                    <p class="animation__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="menu-cont">
-                                <h2 class="photo-name">Проєкт Prime</h2>
-                                <p class="text-name">Маркетинг</p>
+                            <div class="content">
+                                <h2 class="content__title">Проєкт Boxes</h2>
+                                <p class="content__text">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="between-photo">
-                        <a href="" class="mama">
-                            <div class="animation">
-                                <img src="./img/port-img-5-min.jpg" width="368" alt="Проєкт бокс" class="img-shadow">
-                                <div class="overlay-photo">
-                                    <p class="overlay-photo-text">Ресурс пропонує комплексні пропозиції з різним
-                                        рівнем функціоналу та сервісів.
-                                        Все це дозволить відвідувачу отримати
-                                        вичерпні відомості про компанію чи приватну особу.</p>
-                                </div>
-                            </div>
-                            <div class="menu-cont">
-                                <h2 class="photo-name">Проєкт Boxes</h2>
-                                <p class="text-name">Додаток</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="between-photo">
-                        <a href="" class="mama">
+                    <li class="galery__photo">
+                        <a href="" class="galery__link galery__link--hover">
                             <div class="animation">
                                 <img src="./img/port-img-6-min.jpg" width="368" alt="Вдохновение не имеет границ"
-                                    class="img-shadow">
-                                <div class="overlay-photo">
-                                    <p class="overlay-photo-text">Ресурс пропонує комплексні пропозиції з різним
+                                    class="animation__img">
+                                <div class="animation__overlay">
+                                    <p class="animation__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="menu-cont">
-                                <h2 class="photo-name">Inspiration has no Borders</h2>
-                                <p class="text-name">Веб-сайт</p>
+                            <div class="content">
+                                <h2 class="content__title">Inspiration has no Borders</h2>
+                                <p class="content__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="between-photo">
-                        <a href="" class="mama">
+                    <li class="galery__photo">
+                        <a href="" class="galery__link galery__link--hover">
                             <div class="animation">
                                 <img src="./img/port-img-7-min.jpg" width="368" alt="Видання лимитед едишн"
-                                    class="img-shadow">
-                                <div class="overlay-photo">
-                                    <p class="overlay-photo-text">Ресурс пропонує комплексні пропозиції з різним
+                                    class="animation__img">
+                                <div class="animation__overlay">
+                                    <p class="animation__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="menu-cont">
-                                <h2 class="photo-name">Видання Limited Edition</h2>
-                                <p class="text-name">Дизайн</p>
+                            <div class="content">
+                                <h2 class="content__title">Видання Limited Edition</h2>
+                                <p class="content__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="between-photo">
-                        <a href="" class="mama">
+                    <li class="galery__photo">
+                        <a href="" class="galery__link galery__link--hover">
                             <div class="animation">
-                                <img src="./img/port-img-8-min.jpg" width="368" alt="Проект лаб" class="img-shadow">
-                                <div class="overlay-photo">
-                                    <p class="overlay-photo-text">Ресурс пропонує комплексні пропозиції з різним
+                                <img src="./img/port-img-8-min.jpg" width="368" alt="Проект лаб" class="animation__img">
+                                <div class="animation__overlay">
+                                    <p class="animation__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="menu-cont">
-                                <h2 class="photo-name">Проект LAB</h2>
-                                <p class="text-name">Маркетинг</p>
+                            <div class="content">
+                                <h2 class="content__title">Проект LAB</h2>
+                                <p class="content__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="between-photo">
-                        <a href="" class="mama">
+                    <li class="galery__photo">
+                        <a href="" class="galery__link galery__link--hover">
                             <div class="animation">
-                                <img src="./img/port-img-9-min.jpg" width="368" alt="гроув биз" class="img-shadow">
-                                <div class="overlay-photo">
-                                    <p class="overlay-photo-text">Ресурс пропонує комплексні пропозиції з різним
+                                <img src="./img/port-img-9-min.jpg" width="368" alt="гроув биз" class="animation__img">
+                                <div class="animation__overlay">
+                                    <p class="animation__text">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="menu-cont">
-                                <h2 class="photo-name">Growing Business</h2>
-                                <p class="text-name">Додаток</p>
+                            <div class="content">
+                                <h2 class="content__title">Growing Business</h2>
+                                <p class="content__text">Додаток</p>
                             </div>
                         </a>
                     </li>
@@ -227,67 +261,92 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="foot-info">
         <div class="container">
-            <div class="footering">
-                <div class="footer-corect">
-                    <a class="main-logo" href="/">
-                        <span class="web-blue">Web</span><span class="logo-white">Studio</span>
+            <!-- footering -->
+            <div class="foot-info__block">
+                <!-- footer-corect -->
+                <div class="foot-info__wrapper">
+                    <a class="link foot-info__link " href="/">
+                        <span class="logo link__logo--blue">Web</span>Studio
                     </a>
-                    <address class="foot">
-                        <p class="street">м. Київ, пр-т Лесі Українки, 26</p>
-                        <ul>
-                            <li class="foot-link"><a class="foot-info"
-                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            <li class="foot-link"><a class="foot-info" href="tel:+380961111111">+38-096-111-11-11</a>
+                    <!-- foot -->
+                    <address class="address-area">
+                        <!-- street -->
+                        <p class="address-area__street">м. Київ, пр-т Лесі Українки, 26</p>
+                        <ul class="feedback foot-info__feedback">
+                            <li class="feedback__item">
+                                <a class="address-area__link feedback__link--animation" href="mailto:info@devstudio.com">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="feedback__item">
+                                <a class="address-area__link feedback__link--animation" href="tel:+380961111111">
+                                    +38 096 111 11 11
+                                </a>
                             </li>
                         </ul>
                     </address>
-
                 </div>
+                <!-- connect -->
                 <div class="connect">
-                    <h2 class="foot-h">приєднуйтесь</h2>
+                    <h2 class="title connect__title">приєднуйтесь</h2>
                     <ul class="icon-list">
-                        <li class="icon-foot-between">
-                            <a href="" class="icon-foot">
-                                <svg class="icon-think" width="20" height="20">
+                        <!-- icon-team -->
+                        <li class="icon-list__item">
+                            <!-- icon-mess -->
+                            <a href="" class="icon-list__link icon-list__link--hover connect__icon-link">
+                                <!-- icon-item -->
+                                <svg class="icon-list__icon connect__icon-icon" width="20" height="20">
                                     <use href="./img/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="icon-foot-between">
-                            <a href="" class="icon-foot">
-                                <svg class="icon-think" width="20" height="20">
+                        <li class="icon-list__item">
+                            <!-- icon-mess -->
+                            <a href="" class="icon-list__link icon-list__link--hover connect__icon-link">
+                                <!-- icon-item -->
+                                <svg class="icon-list__icon connect__icon-icon" width="20" height="20">
                                     <use href="./img/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="icon-foot-between">
-                            <a href="" class="icon-foot">
-                                <svg class="icon-think" width="20" height="20">
+                        <li class="icon-list__item">
+                            <!-- icon-mess -->
+                            <a href="" class="icon-list__link icon-list__link--hover connect__icon-link">
+                                <!-- icon-item -->
+                                <svg class="icon-list__icon connect__icon-icon" width="20" height="20">
                                     <use href="./img/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="icon-foot-between">
-                            <a href="" class="icon-foot">
-                                <svg class="icon-think" width="20" height="20">
+                        <li class="icon-list__item">
+                            <!-- icon-mess -->
+                            <a href="" class="icon-list__link icon-list__link--hover connect__icon-link">
+                                <!-- icon-item -->
+                                <svg class="icon-list__icon connect__icon-icon " width="20" height="20">
                                     <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>
                     </ul>
                 </div>
+                <!-- subscribe -->
                 <div class="subscribe">
-                    <b class="bold">Підпишіться на розсилку</b>
-                    <form>
-                        <div class="foot-helper">
-                            <label class="mail-area">
-                                <input type="email" placeholder="E-mail">
+                    <!-- bold -->
+                    <b class="subscribe__bold">Підпишіться на розсилку</b>
+                    <form class="footer-form">
+                        <!-- foot-helper -->
+                        <div class="footer-form__dox">
+                            <!-- mail-area -->
+                            <label class="footer-form__label">
+                                <input type="email" placeholder="E-mail" class="footer-form__input">
                             </label>
-                            <button type="submit" class="title">
+                            <!-- button  -->
+                            <button type="submit" class="button footer-form__button">
                                 Підписатися
-                                <svg class="icon-label" width="24" height="24">
+                                <!-- icon-label -->
+                                <svg class="footer-form__icon" width="24" height="24">
                                     <use href="./img/symbol-defs.svg#icon-telegram"></use>
                                 </svg>
                             </button>
