@@ -1,3 +1,25 @@
-body{
-    background-color: blueviolet;
-}
+@import "base/normalize";
+@import "utils/variables";
+@import "utils/mixins";
+@import "base/base-style";
+@import "utils/placeholder";
+@import "components/header/page-header";
+@import "components/logo";
+@import "components/header/list";
+@import "components/main/feedback";
+@import "components/main/hero-page";
+@import "components/main/backdrop";
+@import "components/main/order-form";
+@import "components/main/check-form";
+@import "components/main/our-benefits";
+@import "components/main/thumb";
+@import "components/main/our-skills";
+@import "components/main/picture-list";
+@import "components/main/our-team";
+@import "components/main/icon-block-list";
+@import "components/main/our-clients";
+@import "components/footer/foot-info";
+@import "components/footer/address-area";
+@import "components/footer/connect";
+@import "components/footer/subscribe";
+@import "components/footer/footer-form";

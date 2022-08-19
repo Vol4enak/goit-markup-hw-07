@@ -1,0 +1,26 @@
+/* foot-info */
+
+.foot-info {
+  padding: 60px 0;
+
+  background-color: $hero-color;
+}
+
+.foot-info__block {
+  display: flex;
+}
+
+.foot-info__link {
+  @extend %logo-footer
+}
+
+.foot-info__feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 0;
+}
+
+.foot-info--color {
+  color: rgba(255, 255, 255, 0.6);
+}

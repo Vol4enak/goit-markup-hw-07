@@ -10,19 +10,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./dist/css/main.min.css">
     <title>Студия</title>
 </head>
 
 <body>
     <header class="page-header">
-        <div class="container page-header__container">
+        <div class="page-header__container">
             <nav class="page-header__nav">
-                <a class="link" href="/">
-                    <span class="logo link__logo--blue">Web</span>Studio
+                <a class="logo-link" href="/">
+                    <span class="logo-link--blue">Web</span>Studio
                 </a>
                 <ul class="list">
                     <li class="list__item">
@@ -75,13 +72,13 @@
                 <!-- button -->
                 <button data-modal-open class="button hero-page__button" type="button">Замовити послугу</button>
                 <!-- backdrop is-hidden -->
-                <div class="backdrop backdrop__is-hidden" data-modal>
+                <div class="backdrop backdrop__is--hidden" data-modal>
                     <!-- modal -->
                     <div class="backdrop__modal">
                         <!-- close -->
-                        <button class="backdrop__button-close" data-modal-close>
+                        <button class="backdrop__button--close backdrop__button--close-hover" data-modal-close>
                             <!-- icon-close -->
-                            <svg class="backdrop__icon-close" width="18" height="18">
+                            <svg class="backdrop__icon--close" width="18" height="18">
                                 <use href="./img/symbol-defs.svg#icon-close-black"></use>
                             </svg>
                         </button>
@@ -270,6 +267,7 @@
                     <li class="team-list__item">
                         <!-- our-think -->
                         <img src="./img/first-guy.jpg" class="team__person" alt="Игорь Демьяненко" width="270">
+                        <img src="./sass/components/img-main/" alt="">
                         <!-- names -->
                         <h3 class="team-list__names">Игорь Демьяненко</h3>
                         <!-- post -->
@@ -530,8 +528,8 @@
             <div class="foot-info__block">
                 <!-- footer-corect -->
                 <div class="foot-info__wrapper">
-                    <a class="link foot-info__link " href="/">
-                        <span class="logo link__logo--blue">Web</span>Studio
+                    <a class="footer-link foot-info__link " href="/">
+                        <span class="logo-link--blue">Web</span>Studio
                     </a>
                     <!-- foot -->
                     <address class="address-area">
@@ -539,12 +537,12 @@
                         <p class="address-area__street">м. Київ, пр-т Лесі Українки, 26</p>
                         <ul class="feedback foot-info__feedback">
                             <li class="feedback__item">
-                                <a class="address-area__link feedback__link--animation" href="mailto:info@devstudio.com">
+                                <a class="feedback__link foot-info--color feedback__link--animation" href="mailto:info@devstudio.com">
                                     info@devstudio.com
                                 </a>
                             </li>
                             <li class="feedback__item">
-                                <a class="address-area__link feedback__link--animation" href="tel:+380961111111">
+                                <a class="feedback__link foot-info--color feedback__link--animation" href="tel:+380961111111">
                                     +38 096 111 11 11
                                 </a>
                             </li>
