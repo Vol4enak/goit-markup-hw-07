@@ -48,10 +48,12 @@ address {
 .container {
   @extend %container;
 }
-.title {
-  @extend %title;
-}
 
 .button {
   @include btn;
+}
+
+
+.title {
+  @extend %title;
 }
