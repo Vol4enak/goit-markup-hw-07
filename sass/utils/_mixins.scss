@@ -26,7 +26,8 @@
   &:hover {
     cursor: pointer;
   }
-  &:focus {
+
+    &:focus {
     color: $main-white;
     background-color: $hero-color;
   }
