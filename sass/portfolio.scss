@@ -3,12 +3,18 @@
 @import "utils/mixins";
 @import "base/base-style";
 @import "utils/placeholder";
-@import "components/header/page-header";
+@import "components/studio/header/page-header";
 @import "components/logo";
-@import "components/header/list";
-
-@import "components/footer/foot-info";
-@import "components/footer/address-area";
-@import "components/footer/connect";
-@import "components/footer/subscribe";
-@import "components/footer/footer-form";
+@import "components/studio/header/list";
+@import "components/studio/header/feedback";
+@import "components/portfolio/main-portfolio/main-portfolio";
+@import "components/portfolio/main-portfolio/button-list";
+@import "components/portfolio/main-portfolio/galery";
+@import "components/portfolio/main-portfolio/animation";
+@import "components/portfolio/main-portfolio/content";
+@import "components/studio/main/icon-block-list";
+@import "components/studio/footer/foot-info";
+@import "components/studio/footer/address-area";
+@import "components/studio/footer/connect";
+@import "components/studio/footer/subscribe";
+@import "components/studio/footer/footer-form";
